@@ -1,0 +1,9 @@
+[
+  { "id": 1002, "domain": "OnlineidPro.COM", "available": true },
+  { "id": 1001, "domain": "EasyOnlineid.COM", "available": true },
+  
+  { "id": 1003, "domain": "SmartOnlineid.COM", "available": true },
+  { "id": 1004, "domain": "Guows.COM", "available": true },
+  { "id": 1005, "domain": "Vadhwa.COM", "available": true },
+  { "id": 1006, "domain": "Olvia.it",  "available": true }
+]

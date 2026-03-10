@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+background:#f1f5f9;
+color:#1e293b;
+overflow-x:hidden;
+}
+
+/* modal scroll lock */
+
+body.modal-open{
+overflow:hidden;
+touch-action:none;
+}
+
+/* main container */
+
+.container{
+
+padding-top:110px;
+padding-left:16px;
+padding-right:16px;
+
+max-width:800px;
+margin:auto;
+
+display:flex;
+flex-direction:column;
+gap:20px;
+
+/* empty scroll space */
+
+padding-bottom:25vh;
+
+}

@@ -1,0 +1,384 @@
+.domain-card{
+
+background:white;
+border-radius:16px;
+box-shadow:0 8px 20px rgba(0,0,0,0.06);
+overflow:hidden;
+
+}
+
+/* header */
+
+.card-header{
+
+display:grid;
+grid-template-columns:50px 1fr 50px;
+
+align-items:center;
+
+padding:22px 16px;
+
+}
+
+/* icons */
+
+.card-icon,
+.card-expand{
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+height:34px;
+width:34px;
+
+font-size:22px;
+cursor:pointer;
+
+line-height:1;
+
+}
+
+/* rotation */
+
+.card-expand{
+
+transition:transform 0.45s ease;
+transform-origin:center center;
+
+}
+
+.card-expand.open{
+
+transform:rotate(270deg);
+
+}
+
+/* domain name */
+
+.domain-name{
+
+font-weight:700;
+font-size:22px;
+
+color:#2563eb;
+
+text-align:left;
+
+padding-left:10px;
+
+word-break:break-word;
+
+}
+
+/* body */
+
+.card-body{
+
+max-height:0;
+overflow:hidden;
+
+padding:0 24px;
+
+transition:max-height 0.35s ease,padding 0.25s ease;
+
+border-top:1px solid #eef2f6;
+
+}
+
+.domain-card.active .card-body{
+
+max-height:700px;
+padding:30px 24px;
+
+}
+
+/* badge */
+
+.premium-badge{
+
+display:block;
+margin:0 auto 14px auto;
+
+width:fit-content;
+
+background:#dcfce7;
+color:#166534;
+
+padding:6px 14px;
+
+border-radius:30px;
+
+font-size:12px;
+font-weight:700;
+
+text-transform:uppercase;
+
+}
+
+/* description */
+
+.domain-desc{
+
+text-align:center;
+
+font-size:15px;
+color:#64748b;
+
+margin-bottom:28px;
+
+}
+
+/* description */
+
+.domain-desc-v{
+
+text-align:center;
+
+font-size:15px;
+color:#64748b;
+
+margin-bottom:28px;
+padding-top: 25px;
+
+}
+.domain-desc-v:hover{
+    color: #1d4ed8;
+    transition: 1s;
+}
+/* form */
+
+.form-group{
+margin-bottom:16px;
+}
+
+.form-group label{
+display:block;
+margin-bottom:7px;
+font-size:14px;
+font-weight:600;
+color:#1e293b;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+width:100%;
+padding:13px;
+
+border:1.5px solid #e2e8f0;
+border-radius:10px;
+
+font-size:15px;
+outline:none;
+
+transition:all 0.2s ease;
+
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+border-color:#2563eb;
+box-shadow:0 0 0 3px rgba(37,99,235,0.12);
+
+}
+
+/* offer row */
+
+.flex-row{
+display:flex;
+gap:10px;
+}
+
+.currency{
+width:28%;
+}
+
+.amount{
+width:72%;
+}
+
+/* contact method buttons */
+
+.contact-method{
+
+display:flex;
+gap:10px;
+margin-top:8px;
+
+}
+
+.contact-btn{
+
+flex:1;
+
+padding:11px;
+
+border-radius:8px;
+
+border:1.5px solid #e2e8f0;
+
+background:white;
+
+font-size:14px;
+font-weight:600;
+
+cursor:pointer;
+
+transition:all 0.2s ease;
+
+}
+
+.contact-btn:hover{
+border-color:#2563eb;
+}
+
+.contact-btn.active{
+
+background:#2563eb;
+border-color:#2563eb;
+color:white;
+
+}
+
+/* toggle row */
+
+.toggle-row{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+margin:18px 0;
+
+font-size:14px;
+color:#475569;
+
+}
+
+/* switch */
+
+.switch{
+position:relative;
+display:inline-block;
+width:42px;
+height:24px;
+}
+
+.switch input{
+opacity:0;
+width:0;
+height:0;
+}
+
+.slider{
+
+position:absolute;
+cursor:pointer;
+
+top:0;
+left:0;
+right:0;
+bottom:0;
+
+background:#cbd5f5;
+
+transition:0.3s;
+
+border-radius:20px;
+
+}
+
+.slider:before{
+
+position:absolute;
+content:"";
+
+height:18px;
+width:18px;
+
+left:3px;
+bottom:3px;
+
+background:white;
+
+transition:0.3s;
+
+border-radius:50%;
+
+}
+
+.switch input:checked + .slider{
+background:#2563eb;
+}
+
+.switch input:checked + .slider:before{
+transform:translateX(18px);
+}
+
+/* button */
+
+.submit-btn{
+
+width:100%;
+
+background:#2563eb;
+color:white;
+
+border:none;
+
+padding:15px;
+
+border-radius:10px;
+
+font-size:16px;
+font-weight:700;
+
+cursor:pointer;
+
+margin-top:6px;
+
+box-shadow:0 6px 16px rgba(37,99,235,0.25);
+
+transition:all 0.2s ease;
+
+}
+
+.submit-btn:hover{
+background:#1d4ed8;
+}
+
+/* footer */
+
+.card-footer{
+
+margin-top:22px;
+
+font-size:13px;
+text-align:center;
+
+color:#94a3b8;
+
+border-top:1px solid #f1f5f9;
+
+padding-top:14px;
+
+}
+
+/* heart */
+
+.heart svg{
+fill:none;
+stroke:#64748b;
+stroke-width:2;
+cursor:pointer;
+transition:all 0.25s ease;
+}
+
+.heart.active svg{
+fill:#ef4444;
+stroke:#ef4444;
+}

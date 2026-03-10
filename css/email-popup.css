@@ -1,0 +1,143 @@
+.email-popup{
+
+position:fixed;
+
+bottom:0;
+left:0;
+
+width:100%;
+height:100%;
+
+display:flex;
+align-items:flex-end;
+justify-content:center;
+
+background:rgba(0,0,0,0.25);
+backdrop-filter:blur(6px);
+
+opacity:0;
+pointer-events:none;
+
+transition:all .25s ease;
+
+z-index:2100;
+
+}
+
+.email-popup.active{
+opacity:1;
+pointer-events:auto;
+}
+
+/* glass sheet */
+
+.email-glass{
+
+width:100%;
+max-width:520px;
+
+height:70vh;
+
+background:rgba(255,255,255,0.9);
+
+border-radius:22px 22px 0 0;
+
+padding:22px;
+
+overflow-y:auto;
+
+box-shadow:0 -10px 40px rgba(0,0,0,0.25);
+
+transform:translateY(40px);
+
+transition:all .25s ease;
+
+}
+
+.email-popup.active .email-glass{
+transform:translateY(0);
+}
+
+/* header */
+
+.email-header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+margin-bottom:18px;
+
+}
+
+.email-title{
+
+font-size:16px;
+font-weight:700;
+
+color:#1e293b;
+
+}
+
+.email-close{
+
+font-size:22px;
+cursor:pointer;
+
+}
+
+/* domain rows */
+
+.email-domain-row{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:12px 14px;
+
+border-radius:12px;
+
+background:white;
+
+margin-bottom:10px;
+
+box-shadow:0 4px 12px rgba(0,0,0,0.06);
+
+transition:all .18s ease;
+
+}
+
+.email-domain-row:hover{
+
+transform:translateY(-1px);
+
+box-shadow:0 8px 16px rgba(0,0,0,0.08);
+
+
+}
+
+/* domain name */
+
+.email-domain-name{
+
+font-size:15px;
+font-weight:600;
+
+color:#2563eb;
+
+}
+.email-domain-name:hover{
+color: rgb(32, 208, 91);
+}
+
+/* checkbox */
+
+.email-domain-row input{
+
+width:18px;
+height:18px;
+
+cursor:pointer;
+
+}
